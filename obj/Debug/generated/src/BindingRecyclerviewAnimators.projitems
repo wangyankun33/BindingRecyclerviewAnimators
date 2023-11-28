@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants);ANDROID_1;ANDROID_2;ANDROID_3;ANDROID_4;ANDROID_5;ANDROID_6;ANDROID_7;ANDROID_8;ANDROID_9;ANDROID_10;ANDROID_11;ANDROID_12;ANDROID_13;ANDROID_14;ANDROID_15;ANDROID_16;ANDROID_17;ANDROID_18;ANDROID_19;ANDROID_20;ANDROID_21;ANDROID_22;ANDROID_23;ANDROID_24;ANDROID_25;ANDROID_26;ANDROID_27;ANDROID_28</DefineConstants>
+  </PropertyGroup>
+  <!-- Classes -->
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Java.Interop.__TypeRegistrations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Adapters.AlphaInAnimationAdapter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Adapters.AnimationAdapter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Adapters.ScaleInAnimationAdapter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Adapters.SlideInBottomAnimationAdapter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Adapters.SlideInLeftAnimationAdapter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Adapters.SlideInRightAnimationAdapter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.BaseItemAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.FadeInAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.FadeInDownAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.FadeInLeftAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.FadeInRightAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.FadeInUpAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.FlipInBottomXAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.FlipInLeftYAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.FlipInRightYAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.FlipInTopXAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.Holder.IAnimateViewHolder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.LandingAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.OvershootInLeftAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.OvershootInRightAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.ScaleInAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.ScaleInBottomAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.ScaleInLeftAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.ScaleInRightAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.ScaleInTopAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.SlideInDownAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.SlideInLeftAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.SlideInRightAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Animators.SlideInUpAnimator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.BuildConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)JP.Wasabeef.Recyclerview.Internal.ViewHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)__NamespaceMapping__.cs" />
+  </ItemGroup>
+  <!-- Enums -->
+  <ItemGroup />
+</Project>

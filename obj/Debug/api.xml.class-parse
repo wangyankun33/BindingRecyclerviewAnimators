@@ -1,0 +1,3905 @@
+<api
+  api-source="class-parse">
+  <package
+    name="jp.wasabeef.recyclerview"
+    jni-name="jp/wasabeef/recyclerview">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="BuildConfig"
+      jni-signature="Ljp/wasabeef/recyclerview/BuildConfig;"
+      source-file-name="BuildConfig.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BuildConfig"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="APPLICATION_ID"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;jp.wasabeef.recyclerview&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="BUILD_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;release&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEBUG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        value="false"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="FLAVOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="262"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;2.2.6&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+  </package>
+  <package
+    name="jp.wasabeef.recyclerview.adapters"
+    jni-name="jp/wasabeef/recyclerview/adapters">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/adapters/AnimationAdapter;"
+      extends="jp.wasabeef.recyclerview.adapters.AnimationAdapter"
+      extends-generic-aware="jp.wasabeef.recyclerview.adapters.AnimationAdapter"
+      final="false"
+      name="AlphaInAnimationAdapter"
+      jni-signature="Ljp/wasabeef/recyclerview/adapters/AlphaInAnimationAdapter;"
+      source-file-name="AlphaInAnimationAdapter.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AlphaInAnimationAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$Adapter;)V">
+        <parameter
+          name="adapter"
+          type="android.support.v7.widget.RecyclerView.Adapter"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AlphaInAnimationAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$Adapter;F)V">
+        <parameter
+          name="adapter"
+          type="android.support.v7.widget.RecyclerView.Adapter"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter;" />
+        <parameter
+          name="from"
+          type="float"
+          jni-type="F" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAnimators"
+        native="false"
+        return="android.animation.Animator[]"
+        jni-return="[Landroid/animation/Animator;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v7/widget/RecyclerView$Adapter;"
+      extends="android.support.v7.widget.RecyclerView.Adapter"
+      extends-generic-aware="android.support.v7.widget.RecyclerView.Adapter&lt;android.support.v7.widget.RecyclerView.ViewHolder&gt;"
+      final="false"
+      name="AnimationAdapter"
+      jni-signature="Ljp/wasabeef/recyclerview/adapters/AnimationAdapter;"
+      source-file-name="AnimationAdapter.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AnimationAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$Adapter;)V">
+        <parameter
+          name="adapter"
+          type="android.support.v7.widget.RecyclerView.Adapter&lt;android.support.v7.widget.RecyclerView.ViewHolder&gt;"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter&lt;Landroid/support/v7/widget/RecyclerView$ViewHolder;&gt;;" />
+      </constructor>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getAnimators"
+        native="false"
+        return="android.animation.Animator[]"
+        jni-return="[Landroid/animation/Animator;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;">
+        <parameter
+          name="p0"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getItemCount"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getItemId"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)J">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getItemViewType"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getWrappedAdapter"
+        native="false"
+        return="android.support.v7.widget.RecyclerView.Adapter&lt;android.support.v7.widget.RecyclerView.ViewHolder&gt;"
+        jni-return="Landroid/support/v7/widget/RecyclerView$Adapter&lt;Landroid/support/v7/widget/RecyclerView$ViewHolder;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/support/v7/widget/RecyclerView$Adapter;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onBindViewHolder"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreateViewHolder"
+        native="false"
+        return="android.support.v7.widget.RecyclerView.ViewHolder"
+        jni-return="Landroid/support/v7/widget/RecyclerView$ViewHolder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/ViewGroup;I)Landroid/support/v7/widget/RecyclerView$ViewHolder;">
+        <parameter
+          name="parent"
+          type="android.view.ViewGroup"
+          jni-type="Landroid/view/ViewGroup;" />
+        <parameter
+          name="viewType"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onViewRecycled"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="registerAdapterDataObserver"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$AdapterDataObserver;)V">
+        <parameter
+          name="observer"
+          type="android.support.v7.widget.RecyclerView.AdapterDataObserver"
+          jni-type="Landroid/support/v7/widget/RecyclerView$AdapterDataObserver;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setDuration"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="duration"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setFirstOnly"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="firstOnly"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setInterpolator"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setStartPosition"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="start"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="unregisterAdapterDataObserver"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$AdapterDataObserver;)V">
+        <parameter
+          name="observer"
+          type="android.support.v7.widget.RecyclerView.AdapterDataObserver"
+          jni-type="Landroid/support/v7/widget/RecyclerView$AdapterDataObserver;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/adapters/AnimationAdapter;"
+      extends="jp.wasabeef.recyclerview.adapters.AnimationAdapter"
+      extends-generic-aware="jp.wasabeef.recyclerview.adapters.AnimationAdapter"
+      final="false"
+      name="ScaleInAnimationAdapter"
+      jni-signature="Ljp/wasabeef/recyclerview/adapters/ScaleInAnimationAdapter;"
+      source-file-name="ScaleInAnimationAdapter.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInAnimationAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$Adapter;)V">
+        <parameter
+          name="adapter"
+          type="android.support.v7.widget.RecyclerView.Adapter"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInAnimationAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$Adapter;F)V">
+        <parameter
+          name="adapter"
+          type="android.support.v7.widget.RecyclerView.Adapter"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter;" />
+        <parameter
+          name="from"
+          type="float"
+          jni-type="F" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAnimators"
+        native="false"
+        return="android.animation.Animator[]"
+        jni-return="[Landroid/animation/Animator;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/adapters/AnimationAdapter;"
+      extends="jp.wasabeef.recyclerview.adapters.AnimationAdapter"
+      extends-generic-aware="jp.wasabeef.recyclerview.adapters.AnimationAdapter"
+      final="false"
+      name="SlideInBottomAnimationAdapter"
+      jni-signature="Ljp/wasabeef/recyclerview/adapters/SlideInBottomAnimationAdapter;"
+      source-file-name="SlideInBottomAnimationAdapter.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SlideInBottomAnimationAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$Adapter;)V">
+        <parameter
+          name="adapter"
+          type="android.support.v7.widget.RecyclerView.Adapter"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAnimators"
+        native="false"
+        return="android.animation.Animator[]"
+        jni-return="[Landroid/animation/Animator;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/adapters/AnimationAdapter;"
+      extends="jp.wasabeef.recyclerview.adapters.AnimationAdapter"
+      extends-generic-aware="jp.wasabeef.recyclerview.adapters.AnimationAdapter"
+      final="false"
+      name="SlideInLeftAnimationAdapter"
+      jni-signature="Ljp/wasabeef/recyclerview/adapters/SlideInLeftAnimationAdapter;"
+      source-file-name="SlideInLeftAnimationAdapter.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SlideInLeftAnimationAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$Adapter;)V">
+        <parameter
+          name="adapter"
+          type="android.support.v7.widget.RecyclerView.Adapter"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAnimators"
+        native="false"
+        return="android.animation.Animator[]"
+        jni-return="[Landroid/animation/Animator;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/adapters/AnimationAdapter;"
+      extends="jp.wasabeef.recyclerview.adapters.AnimationAdapter"
+      extends-generic-aware="jp.wasabeef.recyclerview.adapters.AnimationAdapter"
+      final="false"
+      name="SlideInRightAnimationAdapter"
+      jni-signature="Ljp/wasabeef/recyclerview/adapters/SlideInRightAnimationAdapter;"
+      source-file-name="SlideInRightAnimationAdapter.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SlideInRightAnimationAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$Adapter;)V">
+        <parameter
+          name="adapter"
+          type="android.support.v7.widget.RecyclerView.Adapter"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAnimators"
+        native="false"
+        return="android.animation.Animator[]"
+        jni-return="[Landroid/animation/Animator;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)[Landroid/animation/Animator;">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="jp.wasabeef.recyclerview.animators"
+    jni-name="jp/wasabeef/recyclerview/animators">
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v7/widget/SimpleItemAnimator;"
+      extends="android.support.v7.widget.SimpleItemAnimator"
+      extends-generic-aware="android.support.v7.widget.SimpleItemAnimator"
+      final="false"
+      name="BaseItemAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      source-file-name="BaseItemAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BaseItemAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAdd"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)Z">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="p0"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateChange"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;Landroid/support/v7/widget/RecyclerView$ViewHolder;IIII)Z">
+        <parameter
+          name="oldHolder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter
+          name="newHolder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter
+          name="fromX"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="fromY"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="toX"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="toY"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateMove"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;IIII)Z">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter
+          name="fromX"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="fromY"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="toX"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="toY"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemove"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)Z">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="p0"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="endAnimation"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="item"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="endAnimations"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAddDelay"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)J">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getRemoveDelay"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)J">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isRunning"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="runPendingAnimations"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setInterpolator"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="mInterpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mAddAnimations"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.util.ArrayList"
+        type-generic-aware="java.util.ArrayList&lt;android.support.v7.widget.RecyclerView.ViewHolder&gt;"
+        jni-signature="Ljava/util/ArrayList;"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mInterpolator"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="android.view.animation.Interpolator"
+        type-generic-aware="android.view.animation.Interpolator"
+        jni-signature="Landroid/view/animation/Interpolator;"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mRemoveAnimations"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.util.ArrayList"
+        type-generic-aware="java.util.ArrayList&lt;android.support.v7.widget.RecyclerView.ViewHolder&gt;"
+        jni-signature="Ljava/util/ArrayList;"
+        visibility="protected"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      enclosing-method-name="runPendingAnimations"
+      enclosing-method-signature="()V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="BaseItemAnimator.1"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$1;"
+      source-file-name="BaseItemAnimator.java"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      enclosing-method-name="runPendingAnimations"
+      enclosing-method-signature="()V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="BaseItemAnimator.2"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$2;"
+      source-file-name="BaseItemAnimator.java"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      enclosing-method-name="runPendingAnimations"
+      enclosing-method-signature="()V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="BaseItemAnimator.3"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$3;"
+      source-file-name="BaseItemAnimator.java"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      enclosing-method-name="animateMoveImpl"
+      enclosing-method-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;IIII)V"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$VpaListenerAdapter;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator.VpaListenerAdapter"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator.VpaListenerAdapter"
+      final="false"
+      name="BaseItemAnimator.4"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$4;"
+      source-file-name="BaseItemAnimator.java"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationEnd"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStart"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      enclosing-method-name="animateChangeImpl"
+      enclosing-method-signature="(Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$ChangeInfo;)V"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$VpaListenerAdapter;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator.VpaListenerAdapter"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator.VpaListenerAdapter"
+      final="false"
+      name="BaseItemAnimator.5"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$5;"
+      source-file-name="BaseItemAnimator.java"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationEnd"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStart"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      enclosing-method-name="animateChangeImpl"
+      enclosing-method-signature="(Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$ChangeInfo;)V"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$VpaListenerAdapter;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator.VpaListenerAdapter"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator.VpaListenerAdapter"
+      final="false"
+      name="BaseItemAnimator.6"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$6;"
+      source-file-name="BaseItemAnimator.java"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationEnd"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStart"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="BaseItemAnimator.ChangeInfo"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$ChangeInfo;"
+      source-file-name="BaseItemAnimator.java"
+      static="true"
+      visibility="private">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="fromX"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="fromY"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="newHolder"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="android.support.v7.widget.RecyclerView.ViewHolder"
+        type-generic-aware="android.support.v7.widget.RecyclerView.ViewHolder"
+        jni-signature="Landroid/support/v7/widget/RecyclerView$ViewHolder;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="oldHolder"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="android.support.v7.widget.RecyclerView.ViewHolder"
+        type-generic-aware="android.support.v7.widget.RecyclerView.ViewHolder"
+        jni-signature="Landroid/support/v7/widget/RecyclerView$ViewHolder;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="toX"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="toY"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$VpaListenerAdapter;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator.VpaListenerAdapter"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator.VpaListenerAdapter"
+      final="false"
+      name="BaseItemAnimator.DefaultAddVpaListener"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$DefaultAddVpaListener;"
+      source-file-name="BaseItemAnimator.java"
+      static="false"
+      visibility="protected">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BaseItemAnimator.DefaultAddVpaListener"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationEnd"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStart"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$VpaListenerAdapter;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator.VpaListenerAdapter"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator.VpaListenerAdapter"
+      final="false"
+      name="BaseItemAnimator.DefaultRemoveVpaListener"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$DefaultRemoveVpaListener;"
+      source-file-name="BaseItemAnimator.java"
+      static="false"
+      visibility="protected">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BaseItemAnimator.DefaultRemoveVpaListener"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationEnd"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStart"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="BaseItemAnimator.MoveInfo"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$MoveInfo;"
+      source-file-name="BaseItemAnimator.java"
+      static="true"
+      visibility="private">
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="fromX"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="fromY"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="holder"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="android.support.v7.widget.RecyclerView.ViewHolder"
+        type-generic-aware="android.support.v7.widget.RecyclerView.ViewHolder"
+        jni-signature="Landroid/support/v7/widget/RecyclerView$ViewHolder;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="toX"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="toY"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="BaseItemAnimator.VpaListenerAdapter"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator$VpaListenerAdapter;"
+      source-file-name="BaseItemAnimator.java"
+      static="true"
+      visibility="private">
+      <implements
+        name="android.support.v4.view.ViewPropertyAnimatorListener"
+        name-generic-aware="android.support.v4.view.ViewPropertyAnimatorListener"
+        jni-type="Landroid/support/v4/view/ViewPropertyAnimatorListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationEnd"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStart"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="FadeInAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/FadeInAnimator;"
+      source-file-name="FadeInAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FadeInAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FadeInAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="FadeInDownAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/FadeInDownAnimator;"
+      source-file-name="FadeInDownAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FadeInDownAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FadeInDownAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="FadeInLeftAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/FadeInLeftAnimator;"
+      source-file-name="FadeInLeftAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FadeInLeftAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FadeInLeftAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="FadeInRightAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/FadeInRightAnimator;"
+      source-file-name="FadeInRightAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FadeInRightAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FadeInRightAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="FadeInUpAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/FadeInUpAnimator;"
+      source-file-name="FadeInUpAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FadeInUpAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FadeInUpAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="FlipInBottomXAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/FlipInBottomXAnimator;"
+      source-file-name="FlipInBottomXAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FlipInBottomXAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FlipInBottomXAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="FlipInLeftYAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/FlipInLeftYAnimator;"
+      source-file-name="FlipInLeftYAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FlipInLeftYAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FlipInLeftYAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="FlipInRightYAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/FlipInRightYAnimator;"
+      source-file-name="FlipInRightYAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FlipInRightYAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FlipInRightYAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="FlipInTopXAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/FlipInTopXAnimator;"
+      source-file-name="FlipInTopXAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FlipInTopXAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="FlipInTopXAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="LandingAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/LandingAnimator;"
+      source-file-name="LandingAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="LandingAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="LandingAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="OvershootInLeftAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/OvershootInLeftAnimator;"
+      source-file-name="OvershootInLeftAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="OvershootInLeftAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="OvershootInLeftAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(F)V">
+        <parameter
+          name="mTension"
+          type="float"
+          jni-type="F" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="OvershootInRightAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/OvershootInRightAnimator;"
+      source-file-name="OvershootInRightAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="OvershootInRightAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="OvershootInRightAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(F)V">
+        <parameter
+          name="mTension"
+          type="float"
+          jni-type="F" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="ScaleInAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/ScaleInAnimator;"
+      source-file-name="ScaleInAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="ScaleInBottomAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/ScaleInBottomAnimator;"
+      source-file-name="ScaleInBottomAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInBottomAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInBottomAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="ScaleInLeftAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/ScaleInLeftAnimator;"
+      source-file-name="ScaleInLeftAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInLeftAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInLeftAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="ScaleInRightAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/ScaleInRightAnimator;"
+      source-file-name="ScaleInRightAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInRightAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInRightAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="ScaleInTopAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/ScaleInTopAnimator;"
+      source-file-name="ScaleInTopAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInTopAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ScaleInTopAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="SlideInDownAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/SlideInDownAnimator;"
+      source-file-name="SlideInDownAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SlideInDownAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SlideInDownAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="SlideInLeftAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/SlideInLeftAnimator;"
+      source-file-name="SlideInLeftAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SlideInLeftAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SlideInLeftAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="SlideInRightAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/SlideInRightAnimator;"
+      source-file-name="SlideInRightAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SlideInRightAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SlideInRightAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljp/wasabeef/recyclerview/animators/BaseItemAnimator;"
+      extends="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      extends-generic-aware="jp.wasabeef.recyclerview.animators.BaseItemAnimator"
+      final="false"
+      name="SlideInUpAnimator"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/SlideInUpAnimator;"
+      source-file-name="SlideInUpAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SlideInUpAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SlideInUpAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/animation/Interpolator;)V">
+        <parameter
+          name="interpolator"
+          type="android.view.animation.Interpolator"
+          jni-type="Landroid/view/animation/Interpolator;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="holder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="jp.wasabeef.recyclerview.animators.holder"
+    jni-name="jp/wasabeef/recyclerview/animators/holder">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="AnimateViewHolder"
+      jni-signature="Ljp/wasabeef/recyclerview/animators/holder/AnimateViewHolder;"
+      source-file-name="AnimateViewHolder.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="animateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;Landroid/support/v4/view/ViewPropertyAnimatorListener;)V">
+        <parameter
+          name="p0"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter
+          name="p1"
+          type="android.support.v4.view.ViewPropertyAnimatorListener"
+          jni-type="Landroid/support/v4/view/ViewPropertyAnimatorListener;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="animateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;Landroid/support/v4/view/ViewPropertyAnimatorListener;)V">
+        <parameter
+          name="p0"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter
+          name="p1"
+          type="android.support.v4.view.ViewPropertyAnimatorListener"
+          jni-type="Landroid/support/v4/view/ViewPropertyAnimatorListener;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateAddImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="p0"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="preAnimateRemoveImpl"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="p0"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </interface>
+  </package>
+  <package
+    name="jp.wasabeef.recyclerview.internal"
+    jni-name="jp/wasabeef/recyclerview/internal">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="ViewHelper"
+      jni-signature="Ljp/wasabeef/recyclerview/internal/ViewHelper;"
+      source-file-name="ViewHelper.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ViewHelper"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="clear"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="v"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+  </package>
+</api>
